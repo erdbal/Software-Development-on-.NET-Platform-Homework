@@ -1,0 +1,136 @@
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\appsettings.Development.json
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\appsettings.json
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Szoftverfejlesztés dotnet hw.exe
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Szoftverfejlesztés dotnet hw.deps.json
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Szoftverfejlesztés dotnet hw.runtimeconfig.json
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Szoftverfejlesztés dotnet hw.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Szoftverfejlesztés dotnet hw.pdb
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Humanizer.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.CodeDom.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.csproj.AssemblyReference.cache
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.GeneratedMSBuildEditorConfig.editorconfig
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.AssemblyInfoInputs.cache
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.AssemblyInfo.cs
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.csproj.CoreCompileInputs.cache
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.MvcApplicationPartsAssemblyInfo.cs
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.MvcApplicationPartsAssemblyInfo.cache
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\staticwebassets.build.json
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\staticwebassets.development.json
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\staticwebassets\msbuild.Szoftverfejlesztés dotnet hw.Microsoft.AspNetCore.StaticWebAssets.props
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\staticwebassets\msbuild.build.Szoftverfejlesztés dotnet hw.props
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Szoftverfejlesztés dotnet hw.props
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Szoftverfejlesztés dotnet hw.props
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\staticwebassets.pack.json
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\scopedcss\bundle\Szoftverfejlesztés dotnet hw.styles.css
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftver.4DFF004F.Up2Date
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\refint\Szoftverfejlesztés dotnet hw.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.pdb
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\Szoftverfejlesztés dotnet hw.genruntimeconfig.cache
+E:\.projects\Szoftverfejlesztés dotnet hw\obj\Debug\net8.0\ref\Szoftverfejlesztés dotnet hw.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Azure.Core.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Azure.Identity.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Memory.Data.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\.projects\Szoftverfejlesztés dotnet hw\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll

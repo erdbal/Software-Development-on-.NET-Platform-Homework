@@ -1,0 +1,6 @@
+@Szoftverfejlesztés_dotnet_hw_HostAddress = http://localhost:5005
+
+GET {{Szoftverfejlesztés_dotnet_hw_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
