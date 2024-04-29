@@ -1,4 +1,8 @@
-﻿using Szoftverfejlesztés_dotnet_hw.BLL.Dtos;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Microsoft.EntityFrameworkCore;
+using Szoftverfejlesztés_dotnet_hw.BLL.Dtos;
+using Szoftverfejlesztés_dotnet_hw.BLL.Exceptions;
 using Szoftverfejlesztés_dotnet_hw.BLL.Interfaces;
 using Szoftverfejlesztés_dotnet_hw.DAL;
 
@@ -8,40 +12,98 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
     {
 
         private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
 
-        public GroupService(AppDbContext context)
+        public GroupService(AppDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
-        public Task<Group> CreateGroup(Group group)
+        public async Task<Group> AddUserToGroupAsync(int groupId, int userId)
         {
-            throw new NotImplementedException();
+            using var transaction = _context.Database.BeginTransaction();
+            var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == groupId)
+                ?? throw new EntityByIdNotFoundException("Group with id not found", groupId);
+            var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == userId)
+                ?? throw new EntityByIdNotFoundException("User with id not found", userId);
+
+            efGroup.Users.Add(efUser);
+            await _context.SaveChangesAsync();
+
+            await transaction.CommitAsync();
+
+            return await GetGroupByIdAsync(groupId);
         }
 
-        public Task<Group> DeleteGroup(int id)
+        public async Task<Group> CreateGroupAsync(Group group)
         {
-            throw new NotImplementedException();
+            using var transaction = _context.Database.BeginTransaction();
+            var creator = await _context.Users.SingleOrDefaultAsync(u => u.Username == group.Creatorname)
+                ?? throw new EntityByNameNotFoundException("Creator with username not found", group.Creatorname);
+
+            var createdGroup = new DAL.Entities.Group
+            {
+                Groupname = group.Groupname,
+                Creatorname = group.Creatorname,
+            };
+
+            await _context.Groups.AddAsync(createdGroup);
+            createdGroup.Users.Add(creator);
+            await _context.SaveChangesAsync();
+            transaction.Commit();
+            return await GetGroupByIdAsync(createdGroup.Id);
         }
 
-        public Task<IEnumerable<Group>> GetAllGroups()
+        public async Task DeleteGroupAsync(int id)
         {
-            throw new NotImplementedException();
+            var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == id)
+                ?? throw new EntityByIdNotFoundException("Group with id not found", id);
+            _context.Groups.Remove(efGroup);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<Group> GetGroupByGroupname(string groupname)
+        public async Task<List<Group>> GetAllGroupsAsync()
         {
-            throw new NotImplementedException();
+            var groups = await _context.Groups
+                .ProjectTo<Group>(_mapper.ConfigurationProvider)
+                .ToListAsync();
+
+            return groups;
         }
 
-        public Task<Group> GetGroupById(int id)
+        public async Task<Group> GetGroupByGroupnameAsync(string groupname)
         {
-            throw new NotImplementedException();
+            var group = await _context.Groups
+                .ProjectTo<Group>(_mapper.ConfigurationProvider)
+                .SingleOrDefaultAsync(g => g.Groupname == groupname)
+                ?? throw new EntityByNameNotFoundException("Group with groupname not found", groupname);
+
+            return group;
         }
 
-        public Task<Group> UpdateGroupname(int id, Group updatedGroup)
+        public async Task<Group> GetGroupByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var group = await _context.Groups
+                .ProjectTo<Group>(_mapper.ConfigurationProvider)
+                .SingleOrDefaultAsync(g => g.Id == id)
+                ?? throw new EntityByIdNotFoundException("Group with id not found", id);
+
+            return group;
+        }
+
+        public async Task<Group> UpdateGroupnameAsync(int id, Group updatedGroup)
+        {
+            using var transaction = _context.Database.BeginTransaction();
+            var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == id)
+                ?? throw new EntityByIdNotFoundException("Group with id not found", id);
+            
+            efGroup.Groupname = updatedGroup.Groupname;
+
+            await _context.SaveChangesAsync();
+            await transaction.CommitAsync();
+
+            return await GetGroupByIdAsync(id);
         }
     }
 }

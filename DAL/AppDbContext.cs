@@ -8,7 +8,6 @@ namespace Szoftverfejlesztés_dotnet_hw.DAL
 
         public DbSet<User> Users { get; set; }
         public DbSet<Group> Groups { get; set; }
-        public DbSet<UserGroup> UserGroups { get; set; }
         public DbSet<Event> Events { get; set; }
         public DbSet<Comment> Comments { get; set; }
 
@@ -21,15 +20,9 @@ namespace Szoftverfejlesztés_dotnet_hw.DAL
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<UserGroup>()
-                .HasOne(ug => ug.User)
-                .WithMany(u => u.UserGroups)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<UserGroup>()
-                .HasOne(ug => ug.Group)
-                .WithMany(g => g.UserGroups)
-                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Groups)
+                .WithMany(g => g.Users);
 
             modelBuilder.Entity<Event>()
                 .HasOne(e => e.Group)
@@ -51,9 +44,6 @@ namespace Szoftverfejlesztés_dotnet_hw.DAL
                 .WithMany(e => e.Comments)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<UserGroup>()
-                .HasKey(ug => ug.Id);
-
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Username)  
                 .IsUnique();
@@ -62,9 +52,18 @@ namespace Szoftverfejlesztés_dotnet_hw.DAL
                 .HasIndex(g => g.Groupname)
                 .IsUnique();
 
-
+            var admin = new User { Id = 1, Username = "admin", Password = "admin" };
+            var user1 = new User { Id = 2, Username = "user1", Password = "user1" };
+            var adminGroup = new Group { Id = 1, Groupname = "admin", Creatorname = "admin" };
+            var group1 = new Group { Id = 2, Groupname = "group1", Creatorname = "admin" };
             modelBuilder.Entity<User>().HasData(
-                               new User { Id = 1, Username = "admin", Password = "admin" });
+                               admin,user1);
+
+            modelBuilder.Entity<Group>().HasData(
+                    adminGroup,group1);
+
+            
+
         }
     }
 }

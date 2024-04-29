@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XAAyIFwhDHYYKdJpomkInPpF4W0E7k/ZvDnxLheB2JNZSrxEXrqzqpxFVgISnlP9x2T7fOJ8CwQXtVJq1bMmEw==",
+  "dgSpecHash": "VluHtZUivNMFHXJyVZmMseTbgCBT/4sidecJRD2IyyNfJQKGuRAk28eAbnvZ464TIXtVbi2+cgHi7u+P9x0afA==",
   "success": true,
-  "projectFilePath": "E:\\.projects\\Szoftverfejlesztés dotnet hw\\Szoftverfejlesztés dotnet hw.csproj",
+  "projectFilePath": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Szoftverfejlesztés dotnet hw.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Firefox\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Firefox\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

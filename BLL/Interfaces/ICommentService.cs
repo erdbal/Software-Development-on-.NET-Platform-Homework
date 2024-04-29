@@ -1,14 +1,14 @@
-﻿using Szoftverfejlesztés_dotnet_hw.DAL.Entities;
+﻿using Szoftverfejlesztés_dotnet_hw.BLL.Dtos;
 
 namespace Szoftverfejlesztés_dotnet_hw.BLL.Interfaces
 {
     public interface ICommentService
     {
-        public Task<Comment> GetCommentById(int id);
-        public Task<IEnumerable<Comment>> GetCommentsByEventId(int eventId);
-        public Task<IEnumerable<Comment>> GetCommentsByUserID(int userId);
-        public Task<Comment> CreateComment(Comment newComment);
-        public Task<Comment> UpdateComment(int id, Comment updatedComment);
-        public Task<Comment> DeleteComment(int id);
+        public Task<Comment> GetCommentByIdAsync(int id);
+        public Task<List<Comment>> GetCommentsByEventIdAsync(int eventId);
+        public Task<List<Comment>> GetCommentsByUserIDAsync(int userId);
+        public Task<Comment> CreateCommentAsync(Comment newComment);
+        public Task<Comment> UpdateCommentAsync(int id, Comment updatedComment);
+        public Task DeleteCommentAsync(int id);
     }
 }

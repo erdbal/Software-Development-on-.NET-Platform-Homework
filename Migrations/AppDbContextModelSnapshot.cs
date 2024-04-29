@@ -22,6 +22,21 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("GroupUser", b =>
+                {
+                    b.Property<int>("GroupsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("GroupsId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("GroupUser");
+                });
+
             modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Comment", b =>
                 {
                     b.Property<int>("Id")
@@ -95,13 +110,34 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Groupname")
+                    b.Property<string>("Creatorname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Groupname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("Groupname")
+                        .IsUnique();
+
                     b.ToTable("Groups");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Creatorname = "admin",
+                            Groupname = "admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Creatorname = "admin",
+                            Groupname = "group1"
+                        });
                 });
 
             modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.User", b =>
@@ -133,33 +169,28 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
                             Id = 1,
                             Password = "admin",
                             Username = "admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Password = "user1",
+                            Username = "user1"
                         });
                 });
 
-            modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.UserGroup", b =>
+            modelBuilder.Entity("GroupUser", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Group", null)
+                        .WithMany()
+                        .HasForeignKey("GroupsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("GroupId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("UserIsCreatorOfGroup")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("GroupId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserGroups");
+                    b.HasOne("Szoftverfejlesztés_dotnet_hw.DAL.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Comment", b =>
@@ -200,25 +231,6 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
                     b.Navigation("Group");
                 });
 
-            modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.UserGroup", b =>
-                {
-                    b.HasOne("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Group", "Group")
-                        .WithMany("UserGroups")
-                        .HasForeignKey("GroupId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Szoftverfejlesztés_dotnet_hw.DAL.Entities.User", "User")
-                        .WithMany("UserGroups")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Group");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Event", b =>
                 {
                     b.Navigation("Comments");
@@ -227,8 +239,6 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
             modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Group", b =>
                 {
                     b.Navigation("Events");
-
-                    b.Navigation("UserGroups");
                 });
 
             modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.User", b =>
@@ -236,8 +246,6 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("CreatedEvents");
-
-                    b.Navigation("UserGroups");
                 });
 #pragma warning restore 612, 618
         }

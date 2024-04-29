@@ -4,11 +4,12 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Interfaces
 {
     public interface IGroupService
     {
-        public Task<Group> GetGroupById(int id);
-        public Task<Group> GetGroupByGroupname(string groupname);
-        public Task<IEnumerable<Group>> GetAllGroups();
-        public Task<Group> CreateGroup(Group group);
-        public Task<Group> UpdateGroupname(int id, Group updatedGroup);
-        public Task<Group> DeleteGroup(int id);
+        public Task<Group> GetGroupByIdAsync(int id);
+        public Task<Group> GetGroupByGroupnameAsync(string groupname);
+        public Task<List<Group>> GetAllGroupsAsync();
+        public Task<Group> CreateGroupAsync(Group group);
+        public Task<Group> AddUserToGroupAsync(int groupid, int userId);
+        public Task<Group> UpdateGroupnameAsync(int id, Group updatedGroup);
+        public Task DeleteGroupAsync(int id);
     }
 }

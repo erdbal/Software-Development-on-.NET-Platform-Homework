@@ -4,13 +4,13 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Interfaces
 {
     public interface IUserService
     {
-        public Task<User> GetUserById(int id);
-        public Task<User> GetUserByUsername(string username);
-        public Task<User> GetUserByCredentials(string username, string password);
-        public Task<IEnumerable<User>> GetAllUsers();
-        public Task<User> CreateUser(User newUser, string password);
-        public Task<User> UpdateUser(int id, User updatedUser);
-        public Task<User> UpdatePassword(int id, string password);
-        public Task<User> DeleteUser(int id);
+        public Task<User> GetUserByIdAsync(int id);
+        public Task<User> GetUserByUsernameAsync(string username);
+        public Task<List<User>> GetAllUsersAsync();
+        public Task<string> GetUserPasswordAsync(string username);
+        public Task<User> CreateUserAsync(User newUser, string password);
+        public Task<User> UpdateUserAsync(int id, User updatedUser);
+        public Task<User> UpdatePasswordAsync(int id, string password);
+        public Task DeleteUserAsync(int id);
     }
 }

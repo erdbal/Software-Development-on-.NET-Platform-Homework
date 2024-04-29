@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\.projects\\Szoftverfejlesztés dotnet hw\\Szoftverfejlesztés dotnet hw.csproj": {}
+    "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Szoftverfejlesztés dotnet hw.csproj": {}
   },
   "projects": {
-    "E:\\.projects\\Szoftverfejlesztés dotnet hw\\Szoftverfejlesztés dotnet hw.csproj": {
+    "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Szoftverfejlesztés dotnet hw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\.projects\\Szoftverfejlesztés dotnet hw\\Szoftverfejlesztés dotnet hw.csproj",
+        "projectUniqueName": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Szoftverfejlesztés dotnet hw.csproj",
         "projectName": "Szoftverfejlesztés dotnet hw",
-        "projectPath": "E:\\.projects\\Szoftverfejlesztés dotnet hw\\Szoftverfejlesztés dotnet hw.csproj",
+        "projectPath": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Szoftverfejlesztés dotnet hw.csproj",
         "packagesPath": "C:\\Users\\Firefox\\.nuget\\packages\\",
-        "outputPath": "E:\\.projects\\Szoftverfejlesztés dotnet hw\\obj\\",
+        "outputPath": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

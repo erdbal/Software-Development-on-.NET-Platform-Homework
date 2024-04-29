@@ -2,13 +2,13 @@
 {
     public record User()
     {
-        public required int Id { get; set; }
+        public int Id { get; set; }
 
         public required string Username { get; set; }
 
         public required string Password { get; set; }
 
-        public ICollection<UserGroup> UserGroups { get; set; } = new List<UserGroup>();
+        public ICollection<Group> Groups { get; set; } = new List<Group>();
 
         public ICollection<Event> CreatedEvents { get; set; } = new List<Event>();
 

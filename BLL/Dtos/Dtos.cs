@@ -2,68 +2,60 @@
 {
     public record User
     {
-        public int Id { get; init; }
+        public int Id { get; set; }
 
-        public string Username { get; init; } = null!;
+        public string Username { get; set; } = null!;
         
-        public List<UserGroup> UserGroups { get; init; } = new();
+        public List<Group> Groups { get; set; } = new();
 
-        public List<Event> CreatedEvents { get; init; } = new();
+        public List<Event> CreatedEvents { get; set; } = new();
 
-        public List<Comment> Comments { get; init; } = new();
+        public List<Comment> Comments { get;  set; } = new();
     }
 
-    public record UserGroup
-    {
-        public int Id { get; init; }
-
-        public int UserId { get; init; }
-
-        public int GroupId { get; init; }
-
-        public bool UserIsCreatorOfGroup { get; init; }
-
-        public User User { get; init; } = null!;
-
-        public Group Group { get; init; } = null!;
-    }
 
     public record Group
     {
-        public int Id { get; init; }
+        public int Id { get; set; }
 
-        public string Groupname { get; init; } = null!;
+        public string Groupname { get; set; } = null!;
 
-        public int UserGroupId { get; init; }
+        public string Creatorname { get; set; } = null!;
+
+        List<User> Users { get; set; } = new();
 
     }
 
     public record Event {
-        public int Id { get; init; }
+        public int Id { get; set; }
 
-        public string Eventname { get; init; } = null!;
+        public string Eventname { get; set; } = null!;
 
-        public string Description { get; init; } = null!;
+        public string Description { get; set; } = null!;
 
-        public DateTime Date { get; init; }
+        public DateTime Date { get; set; }
 
-        public string Location { get; init; } = null!;
+        public string Location { get; set; } = null!;
 
-        public Group Group { get; init; } = null!;
+        public Group Group { get; set; } = null!;
 
-        public User Creator { get; init; } = null!;
+        public User Creator { get; set; } = null!;
 
-        public List<Comment> Comments { get; init; } = new();
+        public List<Comment> Comments { get; set; } = new();
     }
 
     public record Comment {
     
-        public int Id { get; init; }
+        public int Id { get; set; }
 
-        public string Text { get; init; } = null!;
+        public string Text { get; set; } = null!;
 
-        public User Creator { get; init; } = null!;
+        public int CreatorId { get; set; }
 
-        public Event Event { get; init; } = null!;
+        public User Creator { get; set; } = null!;
+
+        public int EventId { get; set; }
+
+        public Event Event { get; set; } = null!;
     }
 }
