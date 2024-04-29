@@ -20,7 +20,7 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
             _mapper = mapper;
         }
 
-        public async Task<Group> AddUserToGroupAsync(int groupId, int userId)
+        public async Task AddUserToGroupAsync(int groupId, int userId)
         {
             using var transaction = _context.Database.BeginTransaction();
             var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == groupId)
@@ -33,7 +33,20 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
             await transaction.CommitAsync();
 
-            return await GetGroupByIdAsync(groupId);
+        }
+
+        public async Task RemoveUserFromGroup(int groupId, int userId)
+        {
+            using var transaction = _context.Database.BeginTransaction();
+            var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == groupId)
+                ?? throw new EntityByIdNotFoundException("Group with id not found", groupId);
+            var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == userId)
+                ?? throw new EntityByIdNotFoundException("User with id not found", userId);
+
+            efGroup.Users.Remove(efUser);
+            await _context.SaveChangesAsync();
+
+            await transaction.CommitAsync();
         }
 
         public async Task<Group> CreateGroupAsync(Group group)
@@ -70,6 +83,18 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
                 .ToListAsync();
 
             return groups;
+        }
+
+        public async Task<List<User>> GetAllUsersInGroup(int id)
+        {
+            var usersInGroup = await _context.Groups
+                .Include(g => g.Users)
+                .Where(g => g.Id == id)
+                .SelectMany(g => g.Users)
+                .ProjectTo<User>(_mapper.ConfigurationProvider)
+                .ToListAsync();
+
+            return usersInGroup;
         }
 
         public async Task<Group> GetGroupByGroupnameAsync(string groupname)

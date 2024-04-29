@@ -33,6 +33,13 @@ namespace Szoftverfejlesztés_dotnet_hw.Controllers
         {
             return await _userService.GetUserByIdAsync(id);
         }
+        
+        [HttpGet("login")]
+        public async Task<ActionResult<string>> Login([FromHeader] string username, [FromHeader] string password)
+        {
+            var user = await _userService.GetUserByUsernameAsync(username);
+            return _loginService.RefreshOrLogin(user, password);
+        }
 
         // POST api/<UserController>
         [HttpPost]
@@ -40,14 +47,6 @@ namespace Szoftverfejlesztés_dotnet_hw.Controllers
         {
             var created = await _userService.CreateUserAsync(user, password);
             return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
-        }
-
-        [HttpGet]
-        [Route("login")]
-        public async Task<ActionResult<string>> Login([FromHeader] string username, [FromHeader] string password)
-        {
-            var user = await _userService.GetUserByUsernameAsync(username);
-            return _loginService.RefreshOrLogin(user, password);
         }
 
         // PUT api/<UserController>/5

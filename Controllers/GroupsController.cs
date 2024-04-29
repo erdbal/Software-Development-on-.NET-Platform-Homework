@@ -31,6 +31,27 @@ namespace Szoftverfejlesztés_dotnet_hw.Controllers
             return await _groupService.GetGroupByIdAsync(id);
         }
 
+        [HttpGet("{id}/users")]
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers(int id)
+        {
+            var users = await _groupService.GetAllUsersInGroup(id);
+            return users;
+        }
+
+        [HttpPost("join/{id}")]
+        public async Task<ActionResult<Group>> JoinGroup(int id, [FromHeader] int userId)
+        {
+            await _groupService.AddUserToGroupAsync(id, userId);
+            return Created();
+        }
+
+        [HttpDelete("leave/{id}")]
+        public async Task<ActionResult<Group>> LeaveGroup(int id, [FromHeader] int userId)
+        {
+            await _groupService.RemoveUserFromGroup(id, userId);
+            return NoContent();
+        }
+
         // POST api/<GroupController>
         [HttpPost]
         public async Task<ActionResult<Group>> Post([FromBody] Group group)

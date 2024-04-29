@@ -34,15 +34,13 @@ namespace Szoftverfejlesztés_dotnet_hw.Controllers
             return await _eventService.GetEventByIdAsync(id);
         }
 
-        [HttpGet]
-        [Route("{id}/comments")]
+        [HttpGet("{id}/comments")]
         public async Task<ActionResult<IEnumerable<Comment>>> GetComments(int id)
         {
             return await _commentService.GetCommentsByEventIdAsync(id);
         }
 
-        [HttpPost]
-        [Route("{id}/comments")]
+        [HttpPost("{id}/comments")]
         public async Task<ActionResult<Comment>> PostComment(int id, [FromBody] Comment comment)
         {
             comment.EventId = id;
