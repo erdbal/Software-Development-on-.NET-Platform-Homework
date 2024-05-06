@@ -7,6 +7,8 @@ using System.Security.Cryptography;
 using Szoftverfejlesztés_dotnet_hw.DAL;
 using Microsoft.EntityFrameworkCore;
 using Szoftverfejlesztés_dotnet_hw.BLL.Exceptions;
+using AutoMapper.QueryableExtensions;
+using AutoMapper;
 
 namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 {
@@ -14,16 +16,34 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
     {
 
         private readonly AppDbContext _dbcontext;
+        private readonly IMapper _mapper;
 
         private static object syncobject = new object();
 
-        public LoginService(AppDbContext dbContext)
+        public LoginService(AppDbContext dbContext, IMapper mapper)
         {
             _dbcontext = dbContext;
+            _mapper = mapper;
+
         }
 
         private static Dictionary<string,Login> nameLoginPairs = new Dictionary<string, Login>();
-        
+
+
+        public byte[] GetHash(string inputString)
+        {
+            using (HashAlgorithm algorithm = SHA256.Create())
+                return algorithm.ComputeHash(Encoding.UTF8.GetBytes(inputString));
+        }
+
+        public string GetHashString(string inputString)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (byte b in GetHash(inputString))
+                sb.Append(b.ToString("X2"));
+            return sb.ToString();
+        }
+
 
         public int GetIdforToken(string token)
         {
@@ -68,21 +88,17 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
                     ??throw new EntityByIdNotFoundException("No user by id found",user.Id);
 
                 var storedPassword = GetHashString(storeduser.Password);
-                if (storedPassword != storeduser.Password)
+                if (storedPassword != givenPassword)
                 {
                     throw new UnauthorizedException("Invalid password");
                 }
 
                 if (nameLoginPairs.TryGetValue(user.Username, out var login))
-                    if (login.Expiration < DateTime.Now)
-                    {
-                        login.Expiration = DateTime.Now.AddHours(1);
-                        return login.Token;
-                    }
-                    else
-                    {
-                        login.Expiration = DateTime.Now.AddHours(1);
-                    }
+                {
+                    login.Expiration = DateTime.Now.AddHours(1);
+                    
+                    return System.Text.Json.JsonSerializer.Serialize(nameLoginPairs[user.Username].Token);
+                }
 
                 Guid g = Guid.NewGuid();
                 string GuidString = Convert.ToBase64String(g.ToByteArray());
@@ -97,26 +113,17 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
                 };
 
                 nameLoginPairs.Add(user.Username, newLogin);
-                return newLogin.Token;
+                return System.Text.Json.JsonSerializer.Serialize(nameLoginPairs[user.Username].Token);
             }
+
             
-            
+
         }
+
         
 
-        public static byte[] GetHash(string inputString)
-        {
-            using (HashAlgorithm algorithm = SHA256.Create())
-            return algorithm.ComputeHash(Encoding.UTF8.GetBytes(inputString));
-        }
 
-        public static string GetHashString(string inputString)
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (byte b in GetHash(inputString))
-                sb.Append(b.ToString("X2"));
-                return sb.ToString();
-        }
+
     }
 
     public class Login

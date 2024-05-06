@@ -37,9 +37,9 @@
 
         public string Location { get; set; } = null!;
 
-        public Group Group { get; set; } = null!;
+        public int GroupId { get; set; }
 
-        public User Creator { get; set; } = null!;
+        public int CreatorId { get; set; }
 
         public List<Comment> Comments { get; set; } = new();
     }
@@ -52,10 +52,7 @@
 
         public int CreatorId { get; set; }
 
-        public User Creator { get; set; } = null!;
-
         public int EventId { get; set; }
 
-        public Event Event { get; set; } = null!;
     }
 }

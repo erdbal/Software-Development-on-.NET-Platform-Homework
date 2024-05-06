@@ -3,32 +3,60 @@
   "WorkspaceRootPath": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,32 +67,32 @@
       "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\dal\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:dal\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\exceptions\\entityalreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\exceptions\\entityalreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\exceptions\\entitybyidnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\bll\\dtos\\webapiprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:bll\\dtos\\webapiprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -93,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\dal\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|solutionrelative:dal\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{738B9EF4-A914-40E7-84FB-B93813DFA051}|Szoftverfejleszt\u00E9s dotnet hw.csproj|e:\\.projects\\software-development-on-.net-platform-homework\\dal\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,17 +162,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 246,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "UsersController.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwCMAAAAIAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAABBwFQAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T13:53:38.029Z",
               "IsPinned": true,
@@ -176,7 +196,267 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitattributes",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\.gitattributes",
+              "RelativeDocumentMoniker": ".gitattributes",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\.gitattributes",
+              "RelativeToolTip": ".gitattributes",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA1AAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVDhPrZRNTgIxFMerDIaEhHgU97JxwUKGGaNeQJdyCY0XUBDWGhg4AB\u002BuvQk7OQCRFTP1fXWmMxUMCT94ee177eu/LVQdFK31kTSJ0WgEIa0SMJ2A6QTHcF9iicQqlYpa/6zv2\u002B2HD5nuEkWR/l4udRzHZBtjGzFor1YrPR6P9WKx0MNhpN96vTuZThyLJ1AJLK/iJFFxjBanBsXIozqkWq2qev1c1Wq19063e0ZBwBNP4JaQ6WRC/i8ajQb5wWBAvnxyghpOqQPkC8L5IEEQKjgxaqOTFsCd65tb6nmlkur1\u002BxwXCgX58KfT7QptwvCK52wrSLcJvtUKOABkQ6HFXwbGsmMRBkchzpjNphLZDSrEn5G1qnsp\u002BPEtheloXouRnXDTTjhb5tXmeyg0IgzuliHp\u002By0OANbiOCDXp1IYo3mMUxBT8/mMA/8QhGH6ZzC4Zwi5ZqoQB9M3h62I/\u002B/SAQpniBmtPvdQyGeYUdgyX8pl05eIBSxmTzQYEYbc42AuJQWLGJNQEcrJG4A4BTHneSW2sqfKOyybkxXMPbAvrx3IsyLzkPJFmUcWYtDntjG6lIvnp8cvKXNIlPoFvstpJRlQPIAAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-05-06T09:45:20.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAKAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVDhPrZRNTgIxFMerDIaEhHgU97JxwUKGGaNeQJdyCY0XUBDWGhg4AB\u002BuvQk7OQCRFTP1fXWmMxUMCT94ee177eu/LVQdFK31kTSJ0WgEIa0SMJ2A6QTHcF9iicQqlYpa/6zv2\u002B2HD5nuEkWR/l4udRzHZBtjGzFor1YrPR6P9WKx0MNhpN96vTuZThyLJ1AJLK/iJFFxjBanBsXIozqkWq2qev1c1Wq19063e0ZBwBNP4JaQ6WRC/i8ajQb5wWBAvnxyghpOqQPkC8L5IEEQKjgxaqOTFsCd65tb6nmlkur1\u002BxwXCgX58KfT7QptwvCK52wrSLcJvtUKOABkQ6HFXwbGsmMRBkchzpjNphLZDSrEn5G1qnsp\u002BPEtheloXouRnXDTTjhb5tXmeyg0IgzuliHp\u002By0OANbiOCDXp1IYo3mMUxBT8/mMA/8QhGH6ZzC4Zwi5ZqoQB9M3h62I/\u002B/SAQpniBmtPvdQyGeYUdgyX8pl05eIBSxmTzQYEYbc42AuJQWLGJNQEcrJG4A4BTHneSW2sqfKOyybkxXMPbAvrx3IsyLzkPJFmUcWYtDntjG6lIvnp8cvKXNIlPoFvstpJRlQPIAAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-05-06T09:44:39.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAACmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-06T09:09:02.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAABMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-06T09:08:58.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GroupsController.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\GroupsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GroupsController.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\GroupsController.cs",
+              "RelativeToolTip": "Controllers\\GroupsController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:53:09.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventsController.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "Controllers\\EventsController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAABBwCoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:53:23.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\ILoginService.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\ILoginService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\ILoginService.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\ILoginService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T14:39:32.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GroupService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\GroupService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\GroupService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\GroupService.cs",
+              "RelativeToolTip": "BLL\\Services\\GroupService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:30:17.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\EventService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\EventService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\EventService.cs",
+              "RelativeToolTip": "BLL\\Services\\EventService.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:29:25.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\UserService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\UserService.cs",
+              "RelativeToolTip": "BLL\\Services\\UserService.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAABBwDwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:32:00.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAEwCsAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T14:49:08.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\LoginService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\LoginService.cs",
+              "RelativeToolTip": "BLL\\Services\\LoginService.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T14:39:09.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\CommentService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\CommentService.cs",
+              "RelativeToolTip": "BLL\\Services\\CommentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:31:41.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGroupService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IGroupService.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IGroupService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IGroupService.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IGroupService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:16:51.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CommentsController.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "Controllers\\CommentsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAABBwDcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:47:12.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Event.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\Entities\\Event.cs",
+              "RelativeDocumentMoniker": "DAL\\Entities\\Event.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\Entities\\Event.cs",
+              "RelativeToolTip": "DAL\\Entities\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:03:11.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IUserService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:44:54.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Dtos.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Dtos\\Dtos.cs",
+              "RelativeDocumentMoniker": "BLL\\Dtos\\Dtos.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Dtos\\Dtos.cs",
+              "RelativeToolTip": "BLL\\Dtos\\Dtos.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAABBwCEAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:37:00.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EntityAlreadyExistsException.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Exceptions\\EntityAlreadyExistsException.cs",
+              "RelativeDocumentMoniker": "BLL\\Exceptions\\EntityAlreadyExistsException.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Exceptions\\EntityAlreadyExistsException.cs",
+              "RelativeToolTip": "BLL\\Exceptions\\EntityAlreadyExistsException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T10:56:25.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IEventService.cs",
+              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IEventService.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IEventService.cs",
+              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IEventService.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IEventService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:21:02.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "ICommentService.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\ICommentService.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\ICommentService.cs",
@@ -184,136 +464,12 @@
               "RelativeToolTip": "BLL\\Interfaces\\ICommentService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:22:25.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CommentService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\CommentService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\CommentService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\CommentService.cs",
-              "RelativeToolTip": "BLL\\Services\\CommentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:31:41.495Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Dtos.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Dtos\\Dtos.cs",
-              "RelativeDocumentMoniker": "BLL\\Dtos\\Dtos.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Dtos\\Dtos.cs",
-              "RelativeToolTip": "BLL\\Dtos\\Dtos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:37:00.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAAAEUAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T14:49:08.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CommentsController.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\CommentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CommentsController.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\CommentsController.cs",
-              "RelativeToolTip": "Controllers\\CommentsController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T15:47:12.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IGroupService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IGroupService.cs",
-              "RelativeDocumentMoniker": "BLL\\Interfaces\\IGroupService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IGroupService.cs",
-              "RelativeToolTip": "BLL\\Interfaces\\IGroupService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:16:51.316Z",
+              "WhenOpened": "2024-04-28T19:22:25.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GroupsController.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\GroupsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GroupsController.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\GroupsController.cs",
-              "RelativeToolTip": "Controllers\\GroupsController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADIAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T13:53:09.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GroupService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\GroupService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\GroupService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\GroupService.cs",
-              "RelativeToolTip": "BLL\\Services\\GroupService.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAiwCUAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:30:17.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EventsController.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\EventsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EventsController.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Controllers\\EventsController.cs",
-              "RelativeToolTip": "Controllers\\EventsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T13:53:23.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ILoginService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\ILoginService.cs",
-              "RelativeDocumentMoniker": "BLL\\Interfaces\\ILoginService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\ILoginService.cs",
-              "RelativeToolTip": "BLL\\Interfaces\\ILoginService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T14:39:32.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\EventService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\EventService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\EventService.cs",
-              "RelativeToolTip": "BLL\\Services\\EventService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:29:25.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "20240429162202_extra_seed_2.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Migrations\\20240429162202_extra_seed_2.cs",
               "RelativeDocumentMoniker": "Migrations\\20240429162202_extra_seed_2.cs",
@@ -321,59 +477,25 @@
               "RelativeToolTip": "Migrations\\20240429162202_extra_seed_2.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:22:02.441Z"
+              "WhenOpened": "2024-04-29T16:22:02.441Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "BLL\\Interfaces\\IUserService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "BLL\\Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T18:44:54.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DAL\\AppDbContext.cs",
               "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\AppDbContext.cs",
               "RelativeToolTip": "DAL\\AppDbContext.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAD4AAAAlAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAABBwD4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:12:11.988Z"
+              "WhenOpened": "2024-04-28T15:12:11.988Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\UserService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\UserService.cs",
-              "RelativeToolTip": "BLL\\Services\\UserService.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEkAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:32:00.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\LoginService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\LoginService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Services\\LoginService.cs",
-              "RelativeToolTip": "BLL\\Services\\LoginService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAQwBsAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T14:39:09.533Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "UnauthorizedException.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Exceptions\\UnauthorizedException.cs",
               "RelativeDocumentMoniker": "BLL\\Exceptions\\UnauthorizedException.cs",
@@ -381,11 +503,12 @@
               "RelativeToolTip": "BLL\\Exceptions\\UnauthorizedException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T15:15:40.742Z"
+              "WhenOpened": "2024-04-29T15:15:40.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "EntityByNameNotFoundException.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Exceptions\\EntityByNameNotFoundException.cs",
               "RelativeDocumentMoniker": "BLL\\Exceptions\\EntityByNameNotFoundException.cs",
@@ -393,11 +516,12 @@
               "RelativeToolTip": "BLL\\Exceptions\\EntityByNameNotFoundException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T11:46:36.017Z"
+              "WhenOpened": "2024-04-29T11:46:36.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "EntityByIdNotFoundException.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Exceptions\\EntityByIdNotFoundException.cs",
               "RelativeDocumentMoniker": "BLL\\Exceptions\\EntityByIdNotFoundException.cs",
@@ -405,35 +529,25 @@
               "RelativeToolTip": "BLL\\Exceptions\\EntityByIdNotFoundException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T10:12:31.369Z"
+              "WhenOpened": "2024-04-29T10:12:31.369Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IEventService.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IEventService.cs",
-              "RelativeDocumentMoniker": "BLL\\Interfaces\\IEventService.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Interfaces\\IEventService.cs",
-              "RelativeToolTip": "BLL\\Interfaces\\IEventService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:21:02.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "20240429110554_Removed_Usergroups.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Migrations\\20240429110554_Removed_Usergroups.cs",
               "RelativeDocumentMoniker": "Migrations\\20240429110554_Removed_Usergroups.cs",
               "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Migrations\\20240429110554_Removed_Usergroups.cs",
               "RelativeToolTip": "Migrations\\20240429110554_Removed_Usergroups.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAABBwFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T11:05:54.36Z"
+              "WhenOpened": "2024-04-29T11:05:54.36Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "Group.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\Entities\\Group.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Group.cs",
@@ -441,11 +555,12 @@
               "RelativeToolTip": "DAL\\Entities\\Group.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T14:53:10.163Z"
+              "WhenOpened": "2024-04-28T14:53:10.163Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\Entities\\User.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\User.cs",
@@ -453,23 +568,12 @@
               "RelativeToolTip": "DAL\\Entities\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T14:50:16.438Z"
+              "WhenOpened": "2024-04-28T14:50:16.438Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Event.cs",
-              "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\Entities\\Event.cs",
-              "RelativeDocumentMoniker": "DAL\\Entities\\Event.cs",
-              "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\Entities\\Event.cs",
-              "RelativeToolTip": "DAL\\Entities\\Event.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:03:11.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "WebApiProfile.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\BLL\\Dtos\\WebApiProfile.cs",
               "RelativeDocumentMoniker": "BLL\\Dtos\\WebApiProfile.cs",
@@ -477,11 +581,12 @@
               "RelativeToolTip": "BLL\\Dtos\\WebApiProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:40:37.628Z"
+              "WhenOpened": "2024-04-28T19:40:37.628Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "Comment.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\DAL\\Entities\\Comment.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Comment.cs",
@@ -489,23 +594,25 @@
               "RelativeToolTip": "DAL\\Entities\\Comment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:05:13.975Z"
+              "WhenOpened": "2024-04-28T15:05:13.975Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "20240428190130_Added_Uniq_Username.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Migrations\\20240428190130_Added_Uniq_Username.cs",
               "RelativeDocumentMoniker": "Migrations\\20240428190130_Added_Uniq_Username.cs",
               "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Migrations\\20240428190130_Added_Uniq_Username.cs",
               "RelativeToolTip": "Migrations\\20240428190130_Added_Uniq_Username.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAjAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAABBwBcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:01:30.167Z"
+              "WhenOpened": "2024-04-28T19:01:30.167Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "Szoftverfejleszt\u00E9s dotnet hw.csproj",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Szoftverfejleszt\u00E9s dotnet hw.csproj",
               "RelativeDocumentMoniker": "Szoftverfejleszt\u00E9s dotnet hw.csproj",
@@ -513,11 +620,12 @@
               "RelativeToolTip": "Szoftverfejleszt\u00E9s dotnet hw.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-28T19:39:33.972Z"
+              "WhenOpened": "2024-04-28T19:39:33.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "20240428185053_Fixed_nonsense_code.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Migrations\\20240428185053_Fixed_nonsense_code.cs",
               "RelativeDocumentMoniker": "Migrations\\20240428185053_Fixed_nonsense_code.cs",
@@ -525,35 +633,38 @@
               "RelativeToolTip": "Migrations\\20240428185053_Fixed_nonsense_code.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T18:50:53.325Z"
+              "WhenOpened": "2024-04-28T18:50:53.325Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "20240428184112_Seed.cs",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Migrations\\20240428184112_Seed.cs",
               "RelativeDocumentMoniker": "Migrations\\20240428184112_Seed.cs",
               "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Migrations\\20240428184112_Seed.cs",
               "RelativeToolTip": "Migrations\\20240428184112_Seed.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAAABAAAAAsAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAABBwBAAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T18:41:12.248Z"
+              "WhenOpened": "2024-04-28T18:41:12.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAABBwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-28T18:06:43.155Z"
+              "WhenOpened": "2024-04-28T18:06:43.155Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\.projects\\Software-Development-on-.NET-Platform-Homework\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -561,7 +672,8 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-28T17:28:41.707Z"
+              "WhenOpened": "2024-04-28T17:28:41.707Z",
+              "EditorCaption": ""
             }
           ]
         }

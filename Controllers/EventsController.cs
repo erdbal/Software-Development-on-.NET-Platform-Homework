@@ -22,6 +22,7 @@ namespace Szoftverfejlesztés_dotnet_hw.Controllers
 
         // GET: api/<EventController>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Event>>> Get()
         {
             return await _eventService.GetAllEventsAsync();
@@ -29,18 +30,21 @@ namespace Szoftverfejlesztés_dotnet_hw.Controllers
 
         // GET api/<EventController>/5
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<Event>> Get(int id)
         {
             return await _eventService.GetEventByIdAsync(id);
         }
 
         [HttpGet("{id}/comments")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Comment>>> GetComments(int id)
         {
             return await _commentService.GetCommentsByEventIdAsync(id);
         }
 
         [HttpPost("{id}/comments")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<ActionResult<Comment>> PostComment(int id, [FromBody] Comment comment)
         {
             comment.EventId = id;
@@ -50,14 +54,16 @@ namespace Szoftverfejlesztés_dotnet_hw.Controllers
 
         // POST api/<EventController>
         [HttpPost]
-        public async Task<ActionResult<Event>> Post([FromBody] Event _event)
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        public async Task<ActionResult<Event>> Post([FromBody] Event givenevent)
         {
-            var created = await _eventService.CreateEventAsync(_event);
+            var created = await _eventService.CreateEventAsync(givenevent);
             return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
         }
 
         // PUT api/<EventController>/5
         [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<Event>> Put(int id, [FromBody] Event _event)
         {
             return await _eventService.UpdateEventAsync(id, _event);
@@ -65,6 +71,7 @@ namespace Szoftverfejlesztés_dotnet_hw.Controllers
 
         // DELETE api/<EventController>/5
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<ActionResult> Delete(int id)
         {
             await _eventService.DeleteEventAsync(id);

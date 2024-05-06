@@ -11,6 +11,7 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Interfaces
         public Task<User> CreateUserAsync(User newUser, string password);
         public Task<User> UpdateUserAsync(int id, User updatedUser);
         public Task<User> UpdatePasswordAsync(int id, string password);
+        public Task<List<Group>> GetGroupsOfUserAsync(int id);
         public Task DeleteUserAsync(int id);
     }
 }

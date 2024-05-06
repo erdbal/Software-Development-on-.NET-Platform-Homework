@@ -13,6 +13,7 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
 
+
         public CommentService(AppDbContext context, IMapper mapper)
         {
             _context = context;
@@ -67,6 +68,8 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
         public async Task<List<Comment>> GetCommentsByEventIdAsync(int eventId)
         {
             var comments = await _context.Comments
+                .Include(c => c.Creator)
+                .Include(c => c.Event)
                 .Where(c => c.EventId == eventId)
                 .ProjectTo<Comment>(_mapper.ConfigurationProvider)
                 .ToListAsync();

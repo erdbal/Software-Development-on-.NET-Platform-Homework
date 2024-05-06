@@ -51,6 +51,18 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
             return users;
         }
 
+        public async Task<List<Group>> GetGroupsOfUserAsync(int id)
+        {
+            var groups = await _context.Users
+                .Include(u => u.Groups)
+                .Where(u => u.Id == id)
+                .SelectMany(u => u.Groups)
+                .ProjectTo<Group>(_mapper.ConfigurationProvider)
+                .ToListAsync();
+
+            return groups;
+        }
+
         public async Task<User> GetUserByIdAsync(int id)
         {
             var user = await _context.Users

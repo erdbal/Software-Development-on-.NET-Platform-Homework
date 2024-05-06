@@ -20,10 +20,11 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
             _mapper = mapper;
         }
 
-        public async Task AddUserToGroupAsync(int groupId, int userId)
+        public async Task<Group> AddUserToGroupAsync(int groupId, int userId)
         {
             using var transaction = _context.Database.BeginTransaction();
-            var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == groupId)
+            var efGroup = await _context.Groups
+                .SingleOrDefaultAsync(g => g.Id == groupId)
                 ?? throw new EntityByIdNotFoundException("Group with id not found", groupId);
             var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == userId)
                 ?? throw new EntityByIdNotFoundException("User with id not found", userId);
@@ -33,14 +34,19 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
             await transaction.CommitAsync();
 
+            return await GetGroupByIdAsync(groupId);
+
         }
 
         public async Task RemoveUserFromGroup(int groupId, int userId)
         {
             using var transaction = _context.Database.BeginTransaction();
-            var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == groupId)
+            var efGroup = await _context.Groups
+                .Include(g => g.Users)
+                .SingleOrDefaultAsync(g => g.Id == groupId)
                 ?? throw new EntityByIdNotFoundException("Group with id not found", groupId);
-            var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == userId)
+            var efUser = await _context.Users
+                .SingleOrDefaultAsync(u => u.Id == userId)
                 ?? throw new EntityByIdNotFoundException("User with id not found", userId);
 
             efGroup.Users.Remove(efUser);
@@ -97,6 +103,8 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
             return usersInGroup;
         }
 
+        
+
         public async Task<Group> GetGroupByGroupnameAsync(string groupname)
         {
             var group = await _context.Groups
@@ -129,6 +137,18 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
             await transaction.CommitAsync();
 
             return await GetGroupByIdAsync(id);
+        }
+
+        public Task<List<Event>> GetAllEventsInGroup(int id)
+        {
+            var events = _context.Groups
+                .Include(g => g.Events)
+                .Where(g => g.Id == id)
+                .SelectMany(g => g.Events)
+                .ProjectTo<Event>(_mapper.ConfigurationProvider)
+                .ToListAsync();
+
+            return events;
         }
     }
 }

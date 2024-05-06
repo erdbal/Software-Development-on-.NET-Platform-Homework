@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Firefox\Desktop\Új mappa (2)</_PublishTargetUrl>
+    <History>True|2024-05-05T19:50:07.7614834Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=%28localdb%29\MSSQLLocalDB%3bInitial Catalog=Homework%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bTrust Server Certificate=False%3bApplication Intent=ReadWrite%3bMulti Subnet Failover=False</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

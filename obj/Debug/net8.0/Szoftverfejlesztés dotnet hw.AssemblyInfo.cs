@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Szoftverfejlesztés dotnet hw")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc5dd2c2d3de8dbc5cad7e1d986fc1e99676c720")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71217f1a93e38479abbe277aaf30cba5bef41367")]
 [assembly: System.Reflection.AssemblyProductAttribute("Szoftverfejlesztés dotnet hw")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Szoftverfejlesztés dotnet hw")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

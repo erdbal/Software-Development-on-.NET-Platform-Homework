@@ -44,16 +44,17 @@ builder.Services.AddProblemDetails(options =>
                 context.HttpContext.Response.StatusCode = StatusCodes.Status401Unauthorized;
                 context.ProblemDetails.Title = "Unauthenticated access";
                 context.ProblemDetails.Status = StatusCodes.Status401Unauthorized;
-                context.ProblemDetails.Detail = $"You need to acces the api with the given token";
+                context.ProblemDetails.Detail = $"{ex3.Message}";
             }
         }
     );
+
 
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IEventService, EventService>();
 builder.Services.AddTransient<IGroupService, GroupService>();
 builder.Services.AddTransient<ICommentService, CommentService>();
-builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddTransient<ILoginService, LoginService>();
 
 
 var app = builder.Build();
