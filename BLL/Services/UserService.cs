@@ -93,19 +93,25 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
         public async Task<User> UpdatePasswordAsync(int id, string password)
         {
-            using var transaction = _context.Database.BeginTransaction();
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _context.Database.BeginTransaction();
 
-            var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == id)
-                ?? throw new EntityByIdNotFoundException("User with id not found", id);
+                var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == id)
+                    ?? throw new EntityByIdNotFoundException("User with id not found", id);
 
-            efUser.Password = password;
-            await _context.SaveChangesAsync();
-            await transaction.CommitAsync();
-            return await GetUserByIdAsync(id);
+                efUser.Password = password;
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
+                return await GetUserByIdAsync(id);
+            });
         }
 
         public async Task<User> UpdateUserAsync(int id, User updatedUser)
         {
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () => { 
             using var transaction = _context.Database.BeginTransaction();
 
             var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == id)
@@ -115,6 +121,7 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
             await _context.SaveChangesAsync();
             await transaction.CommitAsync();
             return await GetUserByIdAsync(id);
+                });
         }
     }
 }

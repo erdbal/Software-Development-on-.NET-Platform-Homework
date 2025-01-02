@@ -17,7 +17,7 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.4")
+                .HasAnnotation("ProductVersion", "8.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -35,6 +35,23 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
                     b.HasIndex("UsersId");
 
                     b.ToTable("GroupUser");
+
+                    b.HasData(
+                        new
+                        {
+                            GroupsId = 1,
+                            UsersId = 1
+                        },
+                        new
+                        {
+                            GroupsId = 2,
+                            UsersId = 1
+                        },
+                        new
+                        {
+                            GroupsId = 2,
+                            UsersId = 2
+                        });
                 });
 
             modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Comment", b =>
@@ -48,6 +65,9 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnType("int");
 
+                    b.Property<string>("CreatorUsername")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("EventId")
                         .HasColumnType("int");
 
@@ -57,7 +77,7 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CreatorId");
+                    b.HasIndex("CreatorUsername");
 
                     b.HasIndex("EventId");
 
@@ -100,6 +120,28 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
                     b.HasIndex("GroupId");
 
                     b.ToTable("Events");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatorId = 1,
+                            Date = new DateTime(2022, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "desc1",
+                            Eventname = "event1",
+                            GroupId = 1,
+                            Location = "Budapest"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatorId = 2,
+                            Date = new DateTime(2022, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "desc1",
+                            Eventname = "event1",
+                            GroupId = 2,
+                            Location = "Budapest"
+                        });
                 });
 
             modelBuilder.Entity("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Group", b =>
@@ -158,9 +200,6 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Username")
-                        .IsUnique();
-
                     b.ToTable("Users");
 
                     b.HasData(
@@ -173,8 +212,8 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
                         new
                         {
                             Id = 2,
-                            Password = "user1",
-                            Username = "user1"
+                            Password = "asd",
+                            Username = "asd"
                         });
                 });
 
@@ -197,9 +236,9 @@ namespace Szoftverfejlesztés_dotnet_hw.Migrations
                 {
                     b.HasOne("Szoftverfejlesztés_dotnet_hw.DAL.Entities.User", "Creator")
                         .WithMany("Comments")
-                        .HasForeignKey("CreatorId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .HasForeignKey("CreatorUsername")
+                        .HasPrincipalKey("Username")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Szoftverfejlesztés_dotnet_hw.DAL.Entities.Event", "Event")
                         .WithMany("Comments")

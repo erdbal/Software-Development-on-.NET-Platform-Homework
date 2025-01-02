@@ -22,46 +22,52 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
         public async Task<Event> CreateEventAsync(Event newEvent)
         {
-            using var transaction = _context.Database.BeginTransaction();
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _context.Database.BeginTransaction();
 
-            var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == newEvent.GroupId)
-                ?? throw new EntityByIdNotFoundException("Group with id not found", newEvent.GroupId);
-            var efCreator = await _context.Users.SingleOrDefaultAsync(u => u.Id == newEvent.CreatorId)
-                ?? throw new EntityByIdNotFoundException("User with id not found", newEvent.CreatorId);
-            var createdEvent = new DAL.Entities.Event
-            {                
-                Eventname = newEvent.Eventname,
-                Date = newEvent.Date,
-                Description = newEvent.Description,
-                Location = newEvent.Location,
-                Group = efGroup,
-                Creator = efCreator
-            };
-            await _context.Events.AddAsync(createdEvent);
-            await _context.SaveChangesAsync();
-            await transaction.CommitAsync();
-            return await GetEventByIdAsync(createdEvent.Id);
-
+                var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == newEvent.GroupId)
+                    ?? throw new EntityByIdNotFoundException("Group with id not found", newEvent.GroupId);
+                var efCreator = await _context.Users.SingleOrDefaultAsync(u => u.Id == newEvent.CreatorId)
+                    ?? throw new EntityByIdNotFoundException("User with id not found", newEvent.CreatorId);
+                var createdEvent = new DAL.Entities.Event
+                {
+                    Eventname = newEvent.Eventname,
+                    Date = newEvent.Date,
+                    Description = newEvent.Description,
+                    Location = newEvent.Location,
+                    Group = efGroup,
+                    Creator = efCreator
+                };
+                await _context.Events.AddAsync(createdEvent);
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
+                return await GetEventByIdAsync(createdEvent.Id);
+            });
         }
 
 
 
         public async Task DeleteEventAsync(int id)
         {
-            using var transaction = _context.Database.BeginTransaction();
-            var efcomments = await _context.Comments
-                .Where(c => c.EventId == id)
-                .ToListAsync();
-            _context.Comments.RemoveRange(efcomments);
+            var strategy = _context.Database.CreateExecutionStrategy();
+            await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _context.Database.BeginTransaction();
+                var efcomments = await _context.Comments
+                    .Where(c => c.EventId == id)
+                    .ToListAsync();
+                _context.Comments.RemoveRange(efcomments);
 
-            var efEvent = _context.Events
-                .Include(e => e.Comments)
-                .SingleOrDefault(e => e.Id == id)
-                ?? throw new EntityByIdNotFoundException("Event with id not found",id);
-            _context.Events.Remove(efEvent);
-            await _context.SaveChangesAsync();
-            await transaction.CommitAsync();
-            
+                var efEvent = _context.Events
+                    .Include(e => e.Comments)
+                    .SingleOrDefault(e => e.Id == id)
+                    ?? throw new EntityByIdNotFoundException("Event with id not found", id);
+                _context.Events.Remove(efEvent);
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
+            });
         }
 
         public async Task<List<Event>> GetAllEventsAsync()
@@ -107,18 +113,22 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
         public async Task<Event> UpdateEventAsync(int id, Event updatedEvent)
         {
-            using var transaction = _context.Database.BeginTransaction();
-            var efEvent = await _context.Events.SingleOrDefaultAsync(e => e.Id == id)
-                ?? throw new EntityByIdNotFoundException("Event with id not found", id);
-            
-            efEvent.Eventname = updatedEvent.Eventname;
-            efEvent.Date = updatedEvent.Date;
-            efEvent.Description = updatedEvent.Description;
-            efEvent.Location = updatedEvent.Location;
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _context.Database.BeginTransaction();
+                var efEvent = await _context.Events.SingleOrDefaultAsync(e => e.Id == id)
+                    ?? throw new EntityByIdNotFoundException("Event with id not found", id);
 
-            await _context.SaveChangesAsync();
-            await transaction.CommitAsync();
-            return await GetEventByIdAsync(id);
+                efEvent.Eventname = updatedEvent.Eventname;
+                efEvent.Date = updatedEvent.Date;
+                efEvent.Description = updatedEvent.Description;
+                efEvent.Location = updatedEvent.Location;
+
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
+                return await GetEventByIdAsync(id);
+            });
         }
     }
 }

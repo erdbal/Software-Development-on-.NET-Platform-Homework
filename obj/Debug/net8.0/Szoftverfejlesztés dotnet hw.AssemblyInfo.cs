@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a28c837a-48cd-4e07-b082-568a8901d399")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Szoftverfejlesztés dotnet hw")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71217f1a93e38479abbe277aaf30cba5bef41367")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3837f8899c83822eeaa0bff0a0789d07fa51229a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Szoftverfejlesztés dotnet hw")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Szoftverfejlesztés dotnet hw")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

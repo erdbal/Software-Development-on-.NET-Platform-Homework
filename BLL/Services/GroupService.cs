@@ -22,56 +22,67 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
         public async Task<Group> AddUserToGroupAsync(int groupId, int userId)
         {
-            using var transaction = _context.Database.BeginTransaction();
-            var efGroup = await _context.Groups
-                .SingleOrDefaultAsync(g => g.Id == groupId)
-                ?? throw new EntityByIdNotFoundException("Group with id not found", groupId);
-            var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == userId)
-                ?? throw new EntityByIdNotFoundException("User with id not found", userId);
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _context.Database.BeginTransaction();
+                var efGroup = await _context.Groups
+                    .SingleOrDefaultAsync(g => g.Id == groupId)
+                    ?? throw new EntityByIdNotFoundException("Group with id not found", groupId);
+                var efUser = await _context.Users.SingleOrDefaultAsync(u => u.Id == userId)
+                    ?? throw new EntityByIdNotFoundException("User with id not found", userId);
 
-            efGroup.Users.Add(efUser);
-            await _context.SaveChangesAsync();
+                efGroup.Users.Add(efUser);
+                await _context.SaveChangesAsync();
 
-            await transaction.CommitAsync();
+                await transaction.CommitAsync();
 
-            return await GetGroupByIdAsync(groupId);
-
+                return await GetGroupByIdAsync(groupId);
+            });
         }
 
         public async Task RemoveUserFromGroup(int groupId, int userId)
         {
-            using var transaction = _context.Database.BeginTransaction();
-            var efGroup = await _context.Groups
-                .Include(g => g.Users)
-                .SingleOrDefaultAsync(g => g.Id == groupId)
-                ?? throw new EntityByIdNotFoundException("Group with id not found", groupId);
-            var efUser = await _context.Users
-                .SingleOrDefaultAsync(u => u.Id == userId)
-                ?? throw new EntityByIdNotFoundException("User with id not found", userId);
+            var strategy = _context.Database.CreateExecutionStrategy();
+            await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _context.Database.BeginTransaction();
+                var efGroup = await _context.Groups
+                    .Include(g => g.Users)
+                    .SingleOrDefaultAsync(g => g.Id == groupId)
+                    ?? throw new EntityByIdNotFoundException("Group with id not found", groupId);
+                var efUser = await _context.Users
+                    .SingleOrDefaultAsync(u => u.Id == userId)
+                    ?? throw new EntityByIdNotFoundException("User with id not found", userId);
 
-            efGroup.Users.Remove(efUser);
-            await _context.SaveChangesAsync();
+                efGroup.Users.Remove(efUser);
+                await _context.SaveChangesAsync();
 
-            await transaction.CommitAsync();
+                await transaction.CommitAsync();
+            });
         }
 
         public async Task<Group> CreateGroupAsync(Group group)
         {
-            using var transaction = _context.Database.BeginTransaction();
-            var creator = await _context.Users.SingleOrDefaultAsync(u => u.Username == group.Creatorname)
-                ?? throw new EntityByNameNotFoundException("Creator with username not found", group.Creatorname);
-
-            var createdGroup = new DAL.Entities.Group
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () =>
             {
-                Groupname = group.Groupname,
-                Creatorname = group.Creatorname,
-            };
+                using var transaction = _context.Database.BeginTransaction();
+                var creator = await _context.Users.SingleOrDefaultAsync(u => u.Username == group.Creatorname)
+                    ?? throw new EntityByNameNotFoundException("Creator with username not found", group.Creatorname);
 
-            await _context.Groups.AddAsync(createdGroup);
-            createdGroup.Users.Add(creator);
-            await _context.SaveChangesAsync();
-            transaction.Commit();
-            return await GetGroupByIdAsync(createdGroup.Id);
+                var createdGroup = new DAL.Entities.Group
+                {
+                    Groupname = group.Groupname,
+                    Creatorname = group.Creatorname,
+                };
+
+                await _context.Groups.AddAsync(createdGroup);
+                createdGroup.Users.Add(creator);
+                await _context.SaveChangesAsync();
+                transaction.Commit();
+                return await GetGroupByIdAsync(createdGroup.Id);
+            });
         }
 
         public async Task DeleteGroupAsync(int id)
@@ -127,16 +138,20 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
         public async Task<Group> UpdateGroupnameAsync(int id, Group updatedGroup)
         {
-            using var transaction = _context.Database.BeginTransaction();
-            var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == id)
-                ?? throw new EntityByIdNotFoundException("Group with id not found", id);
-            
-            efGroup.Groupname = updatedGroup.Groupname;
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _context.Database.BeginTransaction();
+                var efGroup = await _context.Groups.SingleOrDefaultAsync(g => g.Id == id)
+                    ?? throw new EntityByIdNotFoundException("Group with id not found", id);
 
-            await _context.SaveChangesAsync();
-            await transaction.CommitAsync();
+                efGroup.Groupname = updatedGroup.Groupname;
 
-            return await GetGroupByIdAsync(id);
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
+
+                return await GetGroupByIdAsync(id);
+            });
         }
 
         public Task<List<Event>> GetAllEventsInGroup(int id)

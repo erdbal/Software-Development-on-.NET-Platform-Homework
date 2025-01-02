@@ -22,29 +22,33 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
         public async Task<Comment> CreateCommentAsync(Comment newComment)
         {
-            using var transaction = _context.Database.BeginTransaction();
-
-            var efCreator = await _context.Users.SingleOrDefaultAsync(u => u.Id == newComment.CreatorId)
-                ?? throw new EntityByIdNotFoundException("Creator with id not found",newComment.CreatorId);
-
-            var efEvent = await _context.Events.SingleOrDefaultAsync(e => e.Id == newComment.EventId)
-                ?? throw new EntityByIdNotFoundException("Event with id not found",newComment.EventId);
-
-            var efComment = new DAL.Entities.Comment
+            DAL.Entities.Comment efComment;
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () =>
             {
-                Text = newComment.Text,
-                Id = newComment.Id,
-                CreatorId = newComment.CreatorId,
-                EventId = newComment.EventId,
-                Creator = efCreator,
-                Event = efEvent                             
-                
-            };
-            await _context.Comments.AddAsync(efComment);
-            await _context.SaveChangesAsync();
-            await transaction.CommitAsync();
+                using var transaction = _context.Database.BeginTransaction();
 
-            return await GetCommentByIdAsync(efComment.Id);
+                var efCreator = await _context.Users.SingleOrDefaultAsync(u => u.Id == newComment.CreatorId)
+                    ?? throw new EntityByIdNotFoundException("Creator with id not found", newComment.CreatorId);
+
+                var efEvent = await _context.Events.SingleOrDefaultAsync(e => e.Id == newComment.EventId)
+                    ?? throw new EntityByIdNotFoundException("Event with id not found", newComment.EventId);
+
+                var efComment = new DAL.Entities.Comment
+                {
+                    Text = newComment.Text,
+                    Id = newComment.Id,
+                    CreatorId = newComment.CreatorId,
+                    EventId = newComment.EventId,
+                    Creator = efCreator,
+                    Event = efEvent
+
+                };
+                await _context.Comments.AddAsync(efComment);
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
+                return await GetCommentByIdAsync(efComment.Id);
+            });
         }
 
         public async Task DeleteCommentAsync(int id)
@@ -89,16 +93,20 @@ namespace Szoftverfejlesztés_dotnet_hw.BLL.Services
 
         public async Task<Comment> UpdateCommentAsync(int id, Comment updatedComment)
         {
-            using var transaction = _context.Database.BeginTransaction();
+            var strategy = _context.Database.CreateExecutionStrategy();
+            return await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _context.Database.BeginTransaction();
 
-            var efComment = await _context.Comments.SingleOrDefaultAsync(e => e.Id == id)
-                ?? throw new EntityByIdNotFoundException("Comment with id not found",id);
+                var efComment = await _context.Comments.SingleOrDefaultAsync(e => e.Id == id)
+                    ?? throw new EntityByIdNotFoundException("Comment with id not found", id);
 
-            efComment.Text = updatedComment.Text;
+                efComment.Text = updatedComment.Text;
 
-            await _context.SaveChangesAsync();
-            await transaction.CommitAsync();
-            return await GetCommentByIdAsync(id);
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
+                return await GetCommentByIdAsync(id);
+            });
         }
     }
 }
